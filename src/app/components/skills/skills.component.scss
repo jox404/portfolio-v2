@@ -1,0 +1,30 @@
+.skills {
+  margin: 0px 30px;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    :last-child {
+      grid-column: span 2;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    :nth-child(n) {
+      grid-column: span 2;
+    }
+  }
+}

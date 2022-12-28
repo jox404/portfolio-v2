@@ -1,0 +1,45 @@
+<div class="about-me">
+  <h1>Sobre Mim</h1>
+  <div class="cards-container">
+    <div class="card-photo">
+      <img
+        src="assets/images/perfil3.jpeg"
+        alt="foto de perfil João Vitor Ribeiro"
+      />
+    </div>
+    <div class="card-contact">
+      <app-social-midia-card
+        *ngFor="let socialMidia of socialMidias"
+        [socialIcon]="socialMidia.icon"
+        [socialLink]="socialMidia.link"
+      ></app-social-midia-card>
+    </div>
+    <div class="card-lang">
+      <h2>Idiomas</h2>
+      <ul>
+        <li *ngFor="let language of languages">
+          <img src="assets/icons/{{ language.icon }}" />
+          <p>{{ language.name }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="card-setup">
+      <h2>Setup</h2>
+      <ul>
+        <li *ngFor="let hardware of setup">
+          <img src="assets/icons/{{ hardware.icon }}" />
+          <p>{{ hardware.name }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="card-mini" *ngFor="let info of infos">
+      <h2>{{ info.name }}</h2>
+      <img src="assets/icons/{{ info.icon }}" />
+      <p>{{ info.value }}</p>
+    </div>
+    <div class="buttom">
+      Baixar Curriculo
+      <img src="assets/icons/download.svg" />
+    </div>
+  </div>
+</div>

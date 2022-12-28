@@ -1,0 +1,72 @@
+.project-card {
+  width: 100%;
+  max-width: 1306px;
+  position: relative;
+  margin: 0px auto;
+  /* padding: 0px 30px; */
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 20px;
+
+    .image-project {
+      height: 500px;
+      background-color: #f7f7f7;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(2, 2, 2, 0.185);
+    }
+    > :last-child {
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(2, 2, 2, 0.185);
+      padding: 10px;
+      height: 500px;
+      overflow-x: auto;
+    }
+  }
+}
+
+h2 {
+  text-align: justify;
+  margin: 10px 0px;
+}
+h3 {
+  text-align: justify;
+  margin: 20px 0px 0px 0px;
+}
+p {
+  margin: 0px;
+}
+@media only screen and (max-width: 1366px) {
+  .project-card {
+    padding: 0px 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr auto;
+    gap: 0px !important;
+    .image-project {
+      height: 300;
+      border-radius: 20px 20px 0px 0px !important;
+    }
+    > :last-child {
+      border-radius: 0px 0px 20px 20px !important;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .image-project {
+    height: 300px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .image-project {
+    height: 200px !important;
+  }
+}

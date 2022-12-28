@@ -1,5 +1,5 @@
 {
-  "name": "portifolio-v2",
+  "name": "portfolio-v2",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,9 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@fortawesome/angular-fontawesome": "^0.10.2",
     "rxjs": "~7.5.0",
+    "swiper": "^8.4.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

@@ -1,0 +1,15 @@
+<div class="skill-card">
+  <h2>{{ title }}</h2>
+  <ul class="skill-list" *ngIf="skills != null; else softSkillsComponent">
+    <li *ngFor="let skill of skills">
+      <img src="assets/icons/checked.svg" />{{ skill }}
+    </li>
+  </ul>
+  <ng-template #softSkillsComponent>
+    <ul class="skill-list soft-skills">
+      <li *ngFor="let skill of softSkills">
+        <img src="assets/icons/{{ skill.icon }}" />{{ skill.name }}
+      </li>
+    </ul></ng-template
+  >
+</div>

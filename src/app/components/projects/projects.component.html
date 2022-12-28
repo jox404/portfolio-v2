@@ -1,0 +1,31 @@
+<div class="projects">
+  <h1>Projetos</h1>
+  <swiper
+    [slidesPerView]="1"
+    [spaceBetween]="20"
+    [scrollbar]="{ draggable: true }"
+    #swiper
+    style="width: calc(100vw - 10px); padding-bottom: 20px"
+  >
+    <ng-template swiperSlide *ngFor="let project of projects; let i = index">
+      <app-project-card
+        *ngIf="i === i"
+        [name]="project.name"
+        [description]="project.description"
+        [background]="project.background"
+        [technologies]="project.technologies"
+      >
+      </app-project-card>
+    </ng-template>
+  </swiper>
+  <div class="container" style="width: 100%">
+    <div class="btn-group">
+      <button (click)="slidePrev()">
+        <img src="assets/icons/arrow-left.svg" /> Prev
+      </button>
+      <button (click)="slideNext()">
+        Next <img src="assets/icons/arrow-right.svg" />
+      </button>
+    </div>
+  </div>
+</div>

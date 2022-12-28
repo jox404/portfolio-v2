@@ -1,0 +1,17 @@
+<div class="project-card">
+  <h2>{{ name }}</h2>
+  <div class="card-container">
+    <div
+      class="image-project"
+      [style]="'background-image: url(assets/images/' + background + ')'"
+    ></div>
+    <div>
+      <h3>Tecnologias</h3>
+      <p>{{ technologies.join(" / ") }}</p>
+      <h3>Descrição</h3>
+      <p>
+        {{ description }}
+      </p>
+    </div>
+  </div>
+</div>

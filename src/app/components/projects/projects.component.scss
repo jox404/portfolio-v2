@@ -1,0 +1,39 @@
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .btn-group {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    button {
+      margin: 10px 10px;
+      background-color: #202020;
+      color: #fff;
+      font-size: 18px;
+      height: 50px;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 15px;
+      cursor: pointer;
+      img {
+        height: 20px;
+      }
+      transition: 0.5s;
+    }
+    button:hover {
+      transition: 0.5s;
+      background-color: #000;
+    }
+  }
+}
