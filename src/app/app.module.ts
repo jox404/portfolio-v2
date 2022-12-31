@@ -11,6 +11,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SwiperModule } from 'swiper/angular';
 import { SocialMidiaCardComponent } from './components/social-midia-card/social-midia-card.component';
+import { FormContactMeComponent } from './components/form-contact-me/form-contact-me.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SocialMidiaCardComponent } from './components/social-midia-card/social-
     ProjectsComponent,
     ProjectCardComponent,
     SocialMidiaCardComponent,
+    FormContactMeComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, SwiperModule],
   providers: [],

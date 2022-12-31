@@ -1,4 +1,4 @@
-.home {
+#home {
   margin: 150px 30px 0px 30px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@
     justify-content: center;
     background-position: center;
     background-size: cover;
-    animation: profileAnime infinite 15s 0s;
+    animation: profileAnime infinite 5s;
     animation-fill-mode: forwards;
     filter: grayscale(100%);
   }
@@ -27,24 +27,18 @@ h1 {
 
 @keyframes profileAnime {
   0% {
-    border-radius: 30% 70% 70% 30% / 30% 52% 48% 50%;
-  }
-  20% {
-    border-radius: 30px 50% 30px 50% /30px 50% 30px 50%;
-  }
-  40% {
     border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
   }
-  80% {
+  50% {
     border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
   }
   100% {
-    border-radius: 30% 70% 70% 30% / 30% 52% 48% 50%;
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .home {
+  #home {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
