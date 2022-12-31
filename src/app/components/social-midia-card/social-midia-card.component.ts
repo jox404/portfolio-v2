@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class SocialMidiaCardComponent {
   @Input() socialIcon!: string;
   @Input() socialLink!: string;
+  @Input() socialTarget: string | undefined = '_blank';
 }

@@ -12,6 +12,7 @@
         *ngFor="let socialMidia of socialMidias"
         [socialIcon]="socialMidia.icon"
         [socialLink]="socialMidia.link"
+        [socialTarget]="socialMidia.target"
       ></app-social-midia-card>
     </div>
     <div class="card-lang">
@@ -37,9 +38,13 @@
       <img src="assets/icons/{{ info.icon }}" />
       <p>{{ info.value }}</p>
     </div>
-    <div class="button">
+    <a
+      class="button"
+      href="assets/curriculo/JoaoCosta.pdf"
+      download="Joao Costa Curriculo"
+    >
       Baixar Curriculo
       <img src="assets/icons/download.svg" />
-    </div>
+    </a>
   </div>
 </div>

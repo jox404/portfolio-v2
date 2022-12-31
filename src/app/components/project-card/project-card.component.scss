@@ -3,8 +3,6 @@
   max-width: 1306px;
   position: relative;
   margin: 0px auto;
-  /* padding: 0px 30px; */
-
   .card-container {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -52,11 +50,16 @@ p {
     grid-template-rows: 1fr auto;
     gap: 0px !important;
     .image-project {
-      height: 300;
+      height: 300px !important;
       border-radius: 20px 20px 0px 0px !important;
     }
     > :last-child {
       border-radius: 0px 0px 20px 20px !important;
+      height: 300px !important;
+      .description {
+        max-height: 150px;
+        overflow-y: auto;
+      }
     }
   }
 }

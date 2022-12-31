@@ -8,11 +8,19 @@ type skillType = { name: string; icon: string; value?: string }[];
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  socialMidias: { icon: string; link: string }[] = [
-    { icon: 'linkedin.svg', link: '' },
-    { icon: 'github.svg', link: '' },
-    { icon: 'email.svg', link: '' },
-    { icon: 'whatsapp.svg', link: '' },
+  socialMidias: { icon: string; link: string; target?: string }[] = [
+    {
+      icon: 'linkedin.svg',
+      link: 'https://www.linkedin.com/in/joaocosta105/',
+      target: '_blank',
+    },
+    { icon: 'github.svg', link: 'https://github.com/jox404', target: '_blank' },
+    { icon: 'email.svg', link: '#anchor-contact', target: '_self' },
+    {
+      icon: 'whatsapp.svg',
+      link: 'https://api.whatsapp.com/send/?phone=11987984340&text&type=phone_number&app_absent=0',
+      target: '_blank',
+    },
   ];
 
   languages: skillType = [
@@ -47,7 +55,7 @@ export class AboutMeComponent {
     {
       name: 'Local',
       icon: 'location.svg',
-      value: 'São Paulo & Santana de parnaiba',
+      value: 'São Paulo-SP',
     },
     {
       name: 'Disponivel',
