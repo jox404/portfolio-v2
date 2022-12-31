@@ -49,6 +49,9 @@ footer {
           align-items: center;
           text-align: center;
         }
+        :nth-child(n + 4) {
+          grid-column: span 3;
+        }
       }
     }
   }

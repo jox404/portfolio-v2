@@ -7,9 +7,9 @@
     grid-template-rows: 1fr 1fr 1fr 200px 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10px 5px;
-    width: 100%;
 
     > :nth-child(n) {
+      width: 100%;
       grid-column: 1 / span 2;
       border: none;
       height: 40px;
@@ -32,15 +32,14 @@
     }
     > :nth-child(5) {
       height: 100%;
+      resize: none;
     }
-    > :nth-child(6) {
-      background-color: #d4d4d4;
-      display: flex;
+    button {
+      background-color: #d4d4d4 !important;
       justify-content: center;
-      color: #000;
+      color: #000 !important;
       font-size: 22px;
       transition: 0.5s;
-      border: none;
       user-select: none;
       cursor: pointer;
       img {
