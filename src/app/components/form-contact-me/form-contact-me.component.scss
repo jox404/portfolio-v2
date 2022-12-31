@@ -1,0 +1,55 @@
+#form-contact-me {
+  * {
+    color: #fff;
+  }
+  form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 200px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 5px;
+    width: 100%;
+
+    > :nth-child(n) {
+      grid-column: 1 / span 2;
+      border: none;
+      height: 40px;
+      border-radius: 10px;
+      padding: 5px 10px;
+      display: flex;
+      background-color: #252525;
+      color: #fff;
+    }
+
+    > :nth-child(n)::placeholder {
+      color: rgb(207, 207, 207);
+    }
+    > :nth-child(1) {
+      grid-column: 1 / span 1;
+    }
+    > :nth-child(2) {
+      grid-column: 2 / span 1;
+      grid-row: 1;
+    }
+    > :nth-child(5) {
+      height: 100%;
+    }
+    > :nth-child(6) {
+      background-color: #d4d4d4;
+      display: flex;
+      justify-content: center;
+      color: #000;
+      font-size: 22px;
+      transition: 0.5s;
+      border: none;
+      user-select: none;
+      cursor: pointer;
+      img {
+        margin-left: 10px;
+      }
+    }
+    button:hover {
+      transition: 0.5s;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
