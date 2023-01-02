@@ -13,6 +13,9 @@ import { SwiperModule } from 'swiper/angular';
 import { SocialMidiaCardComponent } from './components/social-midia-card/social-midia-card.component';
 import { FormContactMeComponent } from './components/form-contact-me/form-contact-me.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EmailStatusComponent } from './components/email-status/email-status.component';
+import { AppRoutingModule } from './app-routing.module';
+import { IntroductionComponent } from './components/introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +30,10 @@ import { FooterComponent } from './components/footer/footer.component';
     SocialMidiaCardComponent,
     FormContactMeComponent,
     FooterComponent,
+    EmailStatusComponent,
+    IntroductionComponent,
   ],
-  imports: [BrowserModule, SwiperModule],
+  imports: [BrowserModule, SwiperModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
