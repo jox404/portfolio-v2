@@ -21,7 +21,6 @@ export class SkillsComponent {
   ];
   back: string[] = [
     'Node.js',
-    'Nest.js',
     'Firebase',
     'MongoDb',
     'MongooseODM',
@@ -29,8 +28,6 @@ export class SkillsComponent {
     'MySQL',
     'Sequelize',
     'NoSQL',
-    'TypeORM',
-    'GraphQL',
   ];
 
   softSkills: { name: string; icon: string }[] = [
