@@ -18,7 +18,6 @@ export class SkillsComponent {
     'HTML',
     'Bootstrap',
     'Typescript',
-    'PHP',
   ];
   back: string[] = [
     'Node.js',
@@ -31,6 +30,7 @@ export class SkillsComponent {
     'Sequelize',
     'NoSQL',
     'Express',
+    'PHP',
   ];
 
   softSkills: { name: string; icon: string }[] = [
