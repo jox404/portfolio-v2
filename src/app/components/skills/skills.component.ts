@@ -18,12 +18,14 @@ export class SkillsComponent {
     'HTML',
     'Bootstrap',
     'Typescript',
+    'PHP',
   ];
   back: string[] = [
     'Node.js',
     'Firebase',
-    'MongoDb',
+    'MongoDB',
     'MongooseODM',
+    'phpMyAdmin',
     'SQL',
     'MySQL',
     'Sequelize',
