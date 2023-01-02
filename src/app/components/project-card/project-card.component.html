@@ -8,6 +8,30 @@
     <div>
       <h3>Tecnologias</h3>
       <p>{{ technologies.join(" / ") }}</p>
+      <h3 *ngIf="links.repository && links.pageOnline">Links</h3>
+      <div>
+        <span class="links" *ngIf="links.pageOnline">
+          <img
+            src="assets/icons/visit-website.svg"
+            alt="website logo"
+            width="20px"
+            height="20px"
+          />
+          <a [href]="links.pageOnline" target="_blank">Visitar</a>
+        </span>
+        <span class="links" *ngIf="links.repository">
+          <img
+            src="assets/icons/github-dark.svg"
+            alt="github logo"
+            width="20px"
+            height="20px"
+          />
+          <a href="https://github.com/jox404/anime-jox" target="_blank"
+            >Repositorio</a
+          >
+        </span>
+      </div>
+
       <h3>Descrição</h3>
       <p class="description">
         {{ description }}

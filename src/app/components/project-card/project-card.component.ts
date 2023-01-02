@@ -10,4 +10,8 @@ export class ProjectCardComponent {
   @Input() description!: string;
   @Input() technologies!: string[];
   @Input() background!: string;
+  @Input() links!: {
+    pageOnline: string | undefined;
+    repository: string | undefined;
+  };
 }
