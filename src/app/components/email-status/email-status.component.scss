@@ -8,7 +8,21 @@
   img {
     margin: 0px;
   }
+  p {
+    font-weight: 600;
+  }
+
+  .button {
+    img {
+      margin-right: 5px;
+    }
+  }
+
   * {
     text-align: center;
+  }
+  > :last-child {
+    height: 55px;
+    width: 300px;
   }
 }
