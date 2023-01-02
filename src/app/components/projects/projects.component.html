@@ -14,6 +14,7 @@
         [description]="project.description"
         [background]="project.background"
         [technologies]="project.technologies"
+        [links]="project.links"
       >
       </app-project-card>
     </ng-template>
@@ -21,10 +22,12 @@
   <div class="container" style="width: 100%">
     <div class="btn-group">
       <button (click)="slidePrev()">
-        <img src="assets/icons/arrow-left.svg" /> Prev
+        <img src="assets/icons/arrow-left.svg" />
+        <p>Anterior</p>
       </button>
       <button (click)="slideNext()">
-        Next <img src="assets/icons/arrow-right.svg" />
+        <p>Próximo</p>
+        <img src="assets/icons/arrow-right.svg" />
       </button>
     </div>
   </div>
