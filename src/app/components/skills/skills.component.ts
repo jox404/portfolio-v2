@@ -28,6 +28,7 @@ export class SkillsComponent {
     'MySQL',
     'Sequelize',
     'NoSQL',
+    'Express',
   ];
 
   softSkills: { name: string; icon: string }[] = [
