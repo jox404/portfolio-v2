@@ -24,13 +24,13 @@ export class SkillsComponent {
     'Firebase',
     'MongoDB',
     'MongooseODM',
-    'phpMyAdmin',
     'SQL',
     'MySQL',
     'Sequelize',
     'NoSQL',
     'Express',
     'PHP',
+    'Laravel'
   ];
 
   softSkills: { name: string; icon: string }[] = [
