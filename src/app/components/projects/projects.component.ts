@@ -1,6 +1,5 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 
-import SwiperCore from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
 
 type project = {
@@ -76,7 +75,8 @@ export class ProjectsComponent {
       technologies: ['TypeScript', 'React', 'CSS'],
       background: 'photographerPortfolio.png',
       links: {
-        pageOnline: 'https://jox404.github.io/photographer-portfolio/',
+        pageOnline:
+          'https://photographer-portfolio-git-main-jox404.vercel.app/',
         repository: 'https://github.com/jox404/photographer-portfolio',
       },
     },
