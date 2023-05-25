@@ -28,10 +28,6 @@ export class AboutMeComponent {
       name: 'Inglês-B2',
       icon: 'eua-flag.svg',
     },
-    {
-      name: 'Japonês-N5~N4',
-      icon: 'japan-flag.svg',
-    },
   ];
   setup: skillType = [
     { name: 'Processador: Ryzen 1600', icon: 'processor.svg' },

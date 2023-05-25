@@ -26,11 +26,12 @@ export class SkillsComponent {
     'MongooseODM',
     'SQL',
     'MySQL',
+    'Postgres',
     'Sequelize',
     'NoSQL',
     'Express',
-    'PHP',
-    'Laravel'
+    'Java',
+    'AWS',
   ];
 
   softSkills: { name: string; icon: string }[] = [
